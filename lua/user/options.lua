@@ -18,6 +18,8 @@ local options = {
     scrolloff = 8,
     termguicolors = true,
     completeopt = { "menuone", "noselect" },
+    background = "dark",
+    laststatus = 3,
 }
 
 vim.opt.shortmess:append "c"
