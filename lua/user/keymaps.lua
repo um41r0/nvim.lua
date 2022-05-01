@@ -35,6 +35,10 @@ keymap("n", "<leader>bb", ":buffers<CR>", opts)
 keymap("n", "<leader>bn", ":bn<CR>", opts)
 keymap("n", "<leader>bp", ":bp<CR>", opts)
 
+-- Telescope
+keymap("n", "<leader>t", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<M-t>", "<cmd>Telescope live_grep<cr>", opts)
+
 -- Insert --
 -- Press jk or kj fast to enter
 keymap("i", "jk", "<ESC>", opts)
