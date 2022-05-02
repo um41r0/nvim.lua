@@ -76,6 +76,7 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+    use "jose-elias-alvarez/null-ls.nvim" -- null-ls for formatting
 
     use "nvim-telescope/telescope.nvim" -- telescope.nvim
 
@@ -86,6 +87,7 @@ return packer.startup(function(use)
             'kyazdani42/nvim-web-devicons', -- optional, for file icon
         }
     }
+
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
