@@ -91,6 +91,8 @@ return packer.startup(function(use)
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
 
+    -- Shade.nvim: blur splits
+    use "sunjon/shade.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
