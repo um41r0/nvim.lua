@@ -77,8 +77,10 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
     use "jose-elias-alvarez/null-ls.nvim" -- null-ls for formatting
+    use "j-hui/fidget.nvim" -- LSP status in status bar
 
-    use "nvim-telescope/telescope.nvim" -- telescope.nvim
+
+    use "nvim-telescope/telescope.nvim" -- Telescope
 
     -- NvimTree
     use {
@@ -99,6 +101,9 @@ return packer.startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    -- flutter / dart
+    use { 'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim' }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

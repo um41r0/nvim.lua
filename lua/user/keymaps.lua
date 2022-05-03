@@ -39,6 +39,9 @@ keymap("n", "<leader>bp", ":bp<CR>", opts)
 keymap("n", "<leader>t", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<M-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Telescope with flutter
+keymap("n", "<leader>tf", ":Telescope flutter commands <CR>", opts)
+
 -- Insert --
 -- Press jk or kj fast to enter
 keymap("i", "jk", "<ESC>", opts)

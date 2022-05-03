@@ -87,13 +87,13 @@ cmp.setup {
     sources = {
         { name = "nvim_lsp" },
         { name = "luasnip" },
+        { name = 'nvim_lua' },
         { name = "buffer" },
         { name = "path" },
-        { name = 'nvim_lua' },
     },
     confirm_opts = {
         behavior = cmp.ConfirmBehavior.Replace,
-        select = false,
+        select = true,
     },
     experimental = {
         ghost_text = false,

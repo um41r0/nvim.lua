@@ -13,7 +13,7 @@ if not config_status_ok then
     return
 end
 
-nvim_tree.setup { -- BEGIN_DEFAULT_OPTS
+nvim_tree.setup {
     auto_reload_on_write = true,
     disable_netrw = false,
     hijack_cursor = false,
