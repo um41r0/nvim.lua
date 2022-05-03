@@ -39,8 +39,11 @@ keymap("n", "<leader>bp", ":bp<CR>", opts)
 keymap("n", "<leader>t", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<M-t>", "<cmd>Telescope live_grep<cr>", opts)
 
--- Telescope with flutter
-keymap("n", "<leader>tf", ":Telescope flutter commands <CR>", opts)
+-- flutter
+keymap("n", "<leader>ft", ":Telescope flutter commands <CR>", opts)
+keymap("n", "<leader>fa", ":Lspsaga code_action<CR>", opts)
+keymap("n", "<leader>fe", ":Lspsaga diagnostic_jump_next<CR>", opts)
+
 
 -- Insert --
 -- Press jk or kj fast to enter
@@ -58,4 +61,4 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
 -- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
