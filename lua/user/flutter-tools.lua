@@ -32,6 +32,7 @@ flutter_tools.setup {
             background = true, -- highlight the background
             foreground = true, -- highlight the foreground
         },
+        -- on_attach = ,
         capabilities = cmp_nvim_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
     }
 }

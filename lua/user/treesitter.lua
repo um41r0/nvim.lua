@@ -1,14 +1,31 @@
-local cmp_status_ok, treesitter = pcall(require, "treesitter")
-if not cmp_status_ok then
-    vim.notify("treesitter not found")
+local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+if not status_ok then
+    vim.notify("nvim-treesitter not found")
     return
 end
 
-treesitter.setup {
-    ensure_installed = "maintained",
+configs.setup {
+    ensure_installed = "all",
     sync_install = false,
+    ignore_install = { "" },
+    autopairs = {
+        enable = true,
+    },
     highlight = {
         enable = true,
-        additional_vim_regex_highlighting = true
-    }
+        disable = { "" },
+        additional_vim_regex_highlighting = true,
+    },
+    indent = {
+        enable = true
+    },
+    context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
+    },
+    rainbow = {
+        enable = true,
+        extended_mode = true,
+    },
+
 }

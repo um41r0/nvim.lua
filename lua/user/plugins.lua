@@ -54,10 +54,11 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
-    use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use "JoosepAlviste/nvim-ts-context-commentstring"
+    use "p00f/nvim-ts-rainbow"
 
-    -- Gruvbox colorscheme
-    use { "ellisonleao/gruvbox.nvim" }
+    -- Gruvbox 
+    use "gruvbox-community/gruvbox"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -79,9 +80,6 @@ return packer.startup(function(use)
     use "jose-elias-alvarez/null-ls.nvim" -- null-ls for formatting
     use "j-hui/fidget.nvim" -- LSP status in status bar
 
-
-    use "nvim-telescope/telescope.nvim" -- Telescope
-
     -- NvimTree
     use {
         'kyazdani42/nvim-tree.lua',
@@ -102,8 +100,12 @@ return packer.startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    -- Telescope
+    use "nvim-telescope/telescope.nvim"
+
     -- flutter / dart
     use { 'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim' }
+
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
