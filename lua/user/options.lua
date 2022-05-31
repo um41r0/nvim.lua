@@ -23,6 +23,7 @@ local options = {
 }
 
 vim.opt.shortmess:append "c"
+vim.o.winbar = "%{%v:lua.require'user.winbar'.eval()%}"
 
 for k, v in pairs(options) do
     vim.opt[k] = v
